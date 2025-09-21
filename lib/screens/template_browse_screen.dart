@@ -99,9 +99,9 @@ class _TemplateBrowseScreenState extends State<TemplateBrowseScreen> {
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Colors.grey[50],
+              color: const Color.fromARGB(255, 0, 0, 0),
               border: Border(
-                bottom: BorderSide(color: Colors.grey[200]!),
+                bottom: BorderSide(color: const Color.fromARGB(255, 29, 24, 24)!),
               ),
             ),
             child: Column(
@@ -126,7 +126,7 @@ class _TemplateBrowseScreenState extends State<TemplateBrowseScreen> {
                       borderSide: BorderSide.none,
                     ),
                     filled: true,
-                    fillColor: Colors.white,
+                    fillColor: const Color.fromARGB(255, 84, 45, 45),
                   ),
                   onChanged: (value) => _filterTemplates(),
                 ),
@@ -157,7 +157,7 @@ class _TemplateBrowseScreenState extends State<TemplateBrowseScreen> {
                                   _filterTemplates();
                                 },
                                 backgroundColor: Colors.white,
-                                selectedColor: Colors.blue[100],
+                                selectedColor: const Color.fromARGB(255, 148, 54, 52),
                                 checkmarkColor: Colors.blue[700],
                               );
                             }).toList(),
