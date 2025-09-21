@@ -133,18 +133,18 @@ packages:
     dependency: "direct main"
     description:
       name: camera
-      sha256: d6ec2cbdbe2fa8f5e0d07d8c06368fe4effa985a4a5ddade9cc58a8cd849557d
+      sha256: dfa8fc5a1adaeb95e7a54d86a5bd56f4bb0e035515354c8ac6d262e35cec2ec8
       url: "https://pub.dev"
     source: hosted
-    version: "0.11.2"
-  camera_android_camerax:
+    version: "0.10.6"
+  camera_android:
     dependency: transitive
     description:
-      name: camera_android_camerax
-      sha256: "0db8e7b161ec6cdb2219540eaa4cf599dc963929e5f8ded3b20b3acb52712fa4"
+      name: camera_android
+      sha256: cd49ccb409201a893bf625dca2df8746b88679f302826ab4d12748788a3a24b3
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.21+1"
+    version: "0.10.10+7"
   camera_avfoundation:
     dependency: transitive
     description:
@@ -265,22 +265,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
-  ffmpeg_kit_flutter:
-    dependency: "direct main"
-    description:
-      name: ffmpeg_kit_flutter
-      sha256: "843aae41823ca94a0988d975b4b6cdc6948744b9b7e2707d81a3a9cd237b0100"
-      url: "https://pub.dev"
-    source: hosted
-    version: "6.0.3"
-  ffmpeg_kit_flutter_platform_interface:
-    dependency: transitive
-    description:
-      name: ffmpeg_kit_flutter_platform_interface
-      sha256: addf046ae44e190ad0101b2fde2ad909a3cd08a2a109f6106d2f7048b7abedee
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.1"
   file:
     dependency: transitive
     description:
@@ -334,14 +318,22 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_ffmpeg:
+    dependency: "direct main"
+    description:
+      name: flutter_ffmpeg
+      sha256: "8d8bb4551cf76384748ba6948739c1e56a9164794e48f06cbfb0ff1bfb058b5f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.4.2"
   flutter_lints:
     dependency: "direct dev"
     description:
       name: flutter_lints
-      sha256: "3105dc8492f6183fb076ccf1f351ac3d60564bff92e20bfc4af9cc1651f4e7e1"
+      sha256: "9e8c3858111da373efc5aa341de011d9bd23e2c5c5e0c62bccf32438e192d7b1"
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.0"
+    version: "3.0.2"
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -572,10 +564,10 @@ packages:
     dependency: transitive
     description:
       name: lints
-      sha256: a5e2b223cb7c9c8efdc663ef484fdd95bb243bff242ef5b13e26883547fce9a0
+      sha256: cbf8d4b858bb0134ef3ef87841abdf8d63bfc255c266b7bf6b39daa1085c4290
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.0"
+    version: "3.0.0"
   logging:
     dependency: transitive
     description:
