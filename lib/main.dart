@@ -1,15 +1,11 @@
+// lib/main.dart
 import 'package:flutter/material.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
-import 'core/supabase.dart';
 import 'screens/home_screen.dart';
+import 'screens/template_browse_screen.dart';
+import 'screens/editor_screen.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  
-  // Initialize Supabase
-  await SupabaseConfig.initialize();
-  
-  runApp(MyApp());
+void main() {
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -20,10 +16,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Template Video Editor',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        useMaterial3: true,
+        fontFamily: 'SF Pro Display', // You can change this
       ),
-      home: HomeScreen(),
+      home: const HomeScreen(),
+      routes: {
+        '/browse': (context) => const TemplateBrowseScreen(),
+        '/create': (context) => const EditorScreen(),
+      },
       debugShowCheckedModeBanner: false,
     );
   }
